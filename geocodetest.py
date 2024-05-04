@@ -14,6 +14,8 @@ with open("addresses.csv", "r") as file:
         row["lat"] = 0
         row["lon"] = 0
 
+
+
 for store in list[5:100]:
     query = gmaps.geocode(store["ADDRESS"] + store["CITY"] + store["STATE"] + store["ZIP"])
 
